@@ -1,0 +1,1309 @@
+# Structure
+
+The complete public layout: **folder and file names only**. Every file is a one-line placeholder; the implementation is private.
+
+- `engines/<name>/` - one standalone, self-contained engine per folder
+- `core/` - the NEXXUS core
+- `bridge/` - the server, shared gateway and guardian
+- `dashboard/` - the user interface
+
+```
+bridge/axis_gate/
+    __init__.py
+    __main__.py
+    axis_gate.md
+    core.py
+    naming_audit.py
+bridge/axis_gate/Silo_Alpha/
+    README.txt
+    manifest.txt
+bridge/axis_gate/Silo_Beta/
+    README.txt
+    manifest.txt
+bridge/axis_gate/config/
+    axis_kernel_config.json
+    gate_policy.json
+bridge/axis_gate/system/
+    axis_gate_controller.js
+bridge/gateway/
+    MODULES.md
+    gateway.py
+    run_gateway.bat
+bridge/server/
+    __init__.py
+    check_path.py
+    data_district.py
+    fetcher_district.py
+    game_district.py
+    live_observer.py
+    python_server.py
+    stats_district.py
+    ui_district.py
+core/nexxus/
+    Logistics.md
+    PORTAL_NEXXUS_LOGIC.py
+    README.md
+    TOOL_INGESTION.md
+    __init__.py
+    active_tutor_fetcher.py
+    affiliate_automation_engine.py
+    asymmetric_alpha_hunter_engine.py
+    auto_tester.py
+    autonomous_agent_factory.py
+    autonomous_enterprise_director_engine.py
+    autonomous_identity_and_entity_provisioning_factory.py
+    autonomous_self_healing_engine.py
+    axis_integrity_engine_interface.py
+    bilingual_translator.py
+    bottleneck_archive_engine.py
+    build_loop.py
+    business_incubation_engine.py
+    category_probation.py
+    cgi_dashboard_wedge_integration.py
+    cgi_visual_effects_engine.py
+    claude_code_agent.py
+    cognition.md
+    compliance_sentry.py
+    context_cache.py
+    conversation_factory.py
+    conversational_disfluency_engine.py
+    conversational_flow_state_engine.py
+    conversational_mode.py
+    corporate_headquarters_engine.py
+    county_parcel_arbitrage_scraper_engine.py
+    creation_mode.py
+    curriculum_tutor.py
+    dashboard_cycle.py
+    day_trading_specialist_engine.py
+    debug_connection.py
+    document_formatter.py
+    esoteric_universal_engine.py
+    final_asset_port.py
+    financial_markets_engine.py
+    funnel_factory.py
+    gateway.py
+    generated_response.py
+    hidden_asset_parcel_scout_engine.py
+    hypothesis_engine.py
+    institutional_hedge_fund_arbitrage_engine.py
+    intent_router.py
+    interface.py
+    job_manager.py
+    legal_compliance_audit_engine.py
+    llm_router.py
+    load_system_config.py
+    main.py
+    manifest_writer.py
+    market_scout_agent_factory.py
+    micro_dispatch.py
+    mirror_agent_synthesizer_engine.py
+    mode_policy.py
+    motion_video_engine.py
+    multi_modal_sovereign_appraisal_factory.py
+    ... and 79 more
+core/nexxus/Nexxus/
+    __init__.py
+core/nexxus/Nexxus/Nexxus/
+    __init__.py
+    items.py
+    loaders.py
+    middlewares.py
+    pipelines.py
+    settings.py
+core/nexxus/Nexxus/Nexxus/spiders/
+    __init__.py
+    example.py
+    searcher.py
+core/nexxus/active_silos/
+    __init__.py
+core/nexxus/intake/
+    __init__.py
+core/nexxus/manifests/
+    __init__.py
+dashboard/
+    __init__.py
+    babylon_preview.html
+dashboard/assets/
+    __init__.py
+dashboard/dashboards/
+    __init__.py
+dashboard/vendor/
+    THIRD_PARTY.md
+    babylon.js
+engines/S.A.M.U.E.L.-/
+    README.md
+    __init__.py
+engines/axis-SandM/
+    README.md
+    __init__.py
+    main.py
+    system_stress_test.py
+    test_boot.py
+engines/axis-SandM/config/
+    __init__.py
+engines/axis-SandM/lib/
+    __init__.py
+    config_loader.py
+    event_bus_tool.py
+    logger_tool.py
+    security_validator.py
+    telemetry_metrics_tool.py
+engines/axis-SandM/silos/
+    __init__.py
+engines/axis-SandM/silos/analyst/
+    __init__.py
+    anomaly_detector.py
+    coversion_reporter.py
+    data_aggregator.py
+    feedback_looper.py
+    tool_request.py
+    triad_validator.py
+engines/axis-SandM/silos/analyst/config/
+    __init__.py
+    anomaly_detector_config.py
+    coversion_reporter_config.py
+    data_aggregator_config.py
+    feedback_looper_config.py
+    triad_validator_config.py
+engines/axis-SandM/silos/analyst/lib/
+    __init__.py
+    anomaly_detector_tool.py
+    coversion_reporter_tool.py
+    data_aggregator_tool.py
+    feedback_looper_tool.py
+    triad_validator__tool.py
+engines/axis-SandM/silos/content_script_writer/
+    __init__.py
+    asset_compliance_check.py
+    hook_generator.py
+    multi_format_converter.py
+    narrative_engine.py
+    tone_modifier.py
+    tool_request.py
+engines/axis-SandM/silos/content_script_writer/config/
+    __init__.py
+    asset_compliance_check_config.py
+    hook_generator_config.py
+    multi_format_converter_config.py
+    narrative_engine_config.py
+    tone_modifier_config.py
+engines/axis-SandM/silos/content_script_writer/lib/
+    __init__.py
+    asset_compliance_check_tool.py
+    hook_generator_tool.py
+    multi_format_converter_tool.py
+    narrative_engine_tool.py
+    tone_modifier_tool.py
+engines/axis-SandM/silos/distributer_agent/
+    __init__.py
+    affiliate_tracker.py
+    audience_segmenter.py
+    engagement_tracker.py
+    multi_channel_dispacter.py
+    queue_manager.py
+    tool_request.py
+    trend_harvester.py
+engines/axis-SandM/silos/distributer_agent/config/
+    __init__.py
+    affiliate_tracker_config.py
+    audience_segmenter_config.py
+    engagement_tracker_config.py
+    multi_channel_dispacter_config.py
+    queue_manager_config.py
+    trend_harvester_config.py
+engines/axis-SandM/silos/distributer_agent/lib/
+    __init__.py
+    affiliate_tracker_tool.py
+    audience_segmenter_tool.py
+    engagement_tracker_tool.py
+    multi_channel_dispacter_tool.py
+    queue_manager_tool.py
+    trend_harvester_tool.py
+engines/axis-SandM/silos/strategist/
+    __init__.py
+    blueprint_architect.py
+    competitor_insight_scanner.py
+    resource_allocation_manager.py
+    roi_projecter.py
+    tool_request.py
+    trend_pulse_utility.py
+engines/axis-SandM/silos/strategist/config/
+    __init__.py
+    blueprint_architect_config.py
+    competitor_insight_scanner_config.py
+    resource_allocation_manager_config.py
+    roi_projecter_config.py
+    trend_pulse_utility_config.py
+engines/axis-SandM/silos/strategist/lib/
+    __init__.py
+    blueprint_architect_tool.py
+    competitor_insight_scanner_tool.py
+    resource_allocation_manager_tool.py
+    roi_projecter_tool.py
+    trend_pulse_utility_tool.py
+engines/axis-SandM/silos/technical_agent/
+    __init__.py
+    api_intergrator.py
+    deployment_pipeline.py
+    repository_auditor.py
+    system_health_monitor.py
+    tool_request.py
+    version_controller.py
+engines/axis-SandM/silos/technical_agent/config/
+    __init__.py
+    api_intergrator_config.py
+    deployment_pipeline_config.py
+    repository_auditor_config.py
+    system_health_monitor_config.py
+    version_controller_config.py
+engines/axis-SandM/silos/technical_agent/lib/
+    __init__.py
+    api_intergrator_tool.py
+    deployment_pipeline_tool.py
+    repository_auditor_tool.py
+    system_health_monitor_tool.py
+    version_controller_tool.py
+engines/axis-SandM/silos/visual comercial maker/
+    __init__.py
+    aesthetic_enforcer.py
+    asset_optimizer.py
+    prototype_renderer.py
+    style_sheet_syynchronizer.py
+    tool_request.py
+    ui_un_component_library.py
+engines/axis-SandM/silos/visual comercial maker/config/
+    __init__.py.txt
+    aesthetic_enforcer_config.py
+    asset_optimizer_config.py
+    prototype_renderer_config.py
+    style_sheet_syynchronizer_tool.py
+    ui_un_component_library_config.py
+engines/axis-SandM/silos/visual comercial maker/lib/
+    __init__.py
+    aesthetic_enforcer_tool.py
+    asset_optimizer_tool.py
+    prototype_renderer_tool.py
+    style_sheet_syynchronizer_tool.py
+    ui_un_component_library_tool.py
+engines/axis-SandM/src/
+    __init__.py
+engines/axis-cloud/
+    README.md
+    __init__.py
+    axis_ap_mgr.py
+    axis_audit_mgr.py
+    axis_backup_mgr.py
+    axis_cert_mgr.py
+    axis_cloud_server.py
+    axis_daemon_mgr.py
+    axis_pulse.py
+    axis_vault_core.py
+    main.py
+    tunnel_test.py
+engines/axis-cloud/files/
+    __init__.py
+engines/axis-cloud/files/business/
+    __init__.py
+engines/axis-cloud/files/custom/
+    __init__.py
+engines/axis-cloud/files/reasearch/
+    __init__.py
+engines/axis-cloud/files/reasearch/hypotheses/
+    __init__.py
+engines/axis-cloud/files/reasearch/raw-datasets/
+    __init__.py
+engines/axis-cloud/files/reasearch/simulations/
+    __init__.py
+engines/axis-cloud/files/reasearch/synthesis/
+    __init__.py
+engines/axis-cloud/files/trading/
+    __init__.py
+engines/axis-cloud/silos/
+    vault_index.json
+engines/axis-core/
+    AXIS_PROTOCOLS.md
+    README.md
+    README.md.txt
+    __init__.py
+engines/axis-core/bin/
+    __init__.py
+engines/axis-core/libs/
+    __init__.py
+    gettext.sh
+engines/axis-core/src/
+    README.md
+    __init__.py
+    axis_config.h
+    axis_core.c
+    axis_core.h
+    axis_protocol.h
+    axis_security.h
+    axis_switchboard.c
+    sender.c
+engines/axis-curator/
+    README.md
+    __init__.py
+    automated_metadata_tagging.py
+    checksum_verification.py
+    curate_input_path.py
+    denoising_sanitization.py
+    main.py
+    optimize_storage.py
+    orchestrator_utility.py
+    pipeline_pulse.json
+    verify_integrity.py
+engines/axis-curator/config/
+    __init__.py
+    automated_metadata_tagging_config.py
+    checksum_verification_config.py
+    curate_input_path_config.py
+    denoising_sanitization_config.py
+    optimize_storage_config.py
+    orchestrator_utility_config.py
+    verify_integrity_config.py
+engines/axis-curator/lib/
+    __init__.py
+    automated_metadata_tagging_tool.py
+    checksum_verification_tool.py
+    core_binder_tool.py
+    curate_input_path_tool.py
+    denoising_sanitization_tool.py
+    optimize_storage_tool.py
+    orchestrator_utility_tool.py
+    verify_integrity_tool.py
+engines/axis-curator/src/
+    __init__.py
+engines/axis-diagnostic/
+    README.md
+    __init__.py
+    main.py
+engines/axis-diagnostic/src/
+    __init__.py
+    audit_integrity_utility.py
+    diagnosic_smoke_test.py
+    dna_scanner_utility.py
+    golden_baseline_utility.py
+    hypothesis_engine_utility.py
+    maintenance_learning_utility.py
+    narrative_generator_utility.py
+    pattern_alert_utility.py
+    state_dependency_utility.py
+    telemetry_fire_forget_utility.py
+engines/axis-diagnostic/src/config/
+    __init__.py
+    audit_integrity_utility_config.py
+    diagnosic_smoke_test_config.py
+    dna_scanner_utility_config.py
+    golden_baseline_utility_config.py
+    hypothesis_engine_utility_config.py
+    maintenance_learning_utility_config.py
+    narrative_generator_utility_config.py
+    pattern_alert_utility_config.py
+    state_dependency_utility_config.py
+    telemetry_fire_forget_utility_config.py
+engines/axis-diagnostic/src/lib/
+    __init__.py
+    audit_integrity_utility_tool.py
+    diagnosic_smoke_test_tool.py
+    dna_scanner_utility_tool.py
+    golden_baseline_utility_tool.py
+    hypothesis_engine_utility_tool.py
+    maintenance_learning_utility_tool.py
+    narrative_generator_utility_tool.py
+    pattern_alert_utility_tool.py
+    state_dependency_utility_tool.py
+    telemetry_fire_forget_utility_tool.py
+engines/axis-drive/
+    README.md
+    __init__.py
+    pipeline_pulse.json
+engines/axis-drive/config/
+    __init__.py
+engines/axis-drive/lib/
+    __init__.py
+engines/axis-drive/src/
+    __init__.py
+    core.c
+    core.h
+    inject.c
+    inject.h
+    main.c
+    main.h
+    manifest.c
+    manifest.h
+    port.c
+    port.h
+    temp_assembly.c
+    temp_manifest.json
+    tip.c
+    tip.h
+engines/axis-integrity/
+    README.md
+    __init__.py
+    main.py
+engines/axis-integrity/auditor_interface/
+    __init__.py
+    anomaly_threshold_table.py
+    auditor.py
+    auditor_patrol_radio_request.py
+    auditor_selfhealer_request.py
+    auditor_settings.py
+    auth_protocol.py
+    client_params.json
+    director_params.py
+    forensic_dump.py
+    freeze_all.py
+    ledger.py
+    patrol_link.py
+    silo_inventory_map.py
+    system_clock.py
+    validator.py
+engines/axis-integrity/auditor_interface/config/
+    _init_.py
+    anomaly_threshold_table_config.py
+    auditor_config.py
+    auditor_settings_config.py
+    auth_protocol_config.py
+    client_params_config.json
+    director_params_config.py
+    forensic_dump_config.py
+    freeze_all_config.py
+    ledger_config.py
+    patrol_link_config.py
+    rules_config.py
+    silo_inventory_map_config.py
+    system_clock_config.py
+    validator_config.py
+engines/axis-integrity/auditor_interface/lib/
+    _init_.py
+    auditor_settings_tool.py
+    auditor_tool.py
+    auth_protocol_tool.py
+    client_params_tool.json
+    director_params_tool.py
+    forensic_dump_tool.py
+    freeze_all_tool.py
+    ledger_tool.py
+    patrol_link_tool.py
+    rules_tool.py
+    silo_inventory_map_tool.py
+    system_clock_tool.py
+    validator_tool.py
+engines/axis-integrity/config/
+    __init__.py
+    integrity_check_config.py
+engines/axis-integrity/lib/
+    __init__.py
+    patrol_radio.py
+    self_healer.py
+    user_preference..py
+engines/axis-integrity/src/
+    __init__.py
+engines/axis-integrity/src/security/
+    __init__.py
+    forensics.py
+    freeze_all.py
+    mirror_box.py
+    security_patrol_radio_request.py
+    security_selfhealer_request.py
+    security_userpreference_request.py
+    sentry.py
+    shield.py
+    silo_config.py
+    silo_map_request.py
+    validator_request.py
+engines/axis-integrity/src/security/config/
+    _init_.py
+    forensics config.py
+    mirrow_config.py
+    sentry_config.py
+    shield_config.py
+    silo_config_config.py
+engines/axis-integrity/src/security/lib/
+    _init_.py
+    forensics_tool.py
+    mirror_box_tool.py
+    sentry_tool.py
+    shield_tool.py
+    silo_config_tool.py
+engines/axis-integrity/src/silos/
+    __init__.py
+engines/axis-integrity/src/silos/company a/
+    __init__.py
+engines/axis-integrity/src/silos/company b/
+    __init__.py
+engines/axis-link/
+    README.md
+    main.py
+engines/axis-link/config/
+    __init__.py
+    utility.py
+engines/axis-link/lib/
+    __init__.py
+engines/axis-link/src/
+    __init__.py
+    orchestrator.py
+    relay.py
+    security.py
+    test_master.py
+engines/axis-llm/
+    README.md
+    __init__.py
+    attention_context_engine.py
+    audit_helper.py
+    cleaner_sanitizer.py
+    embedding_vectorizer_utility.py
+    infrence_feed_forward_utility.py
+    main.py
+    vocabulary_mapping_utility.py
+engines/axis-llm/config/
+    __init__.py
+    attention_context_engine_config.py
+    cleaner_sanitizer_config.py
+    embedding_vectorizer_utility_config.py
+    infrence_feed_forward_utility_config.py
+    vocabulary_mapping_utility_config.py
+engines/axis-llm/lib/
+    __init__.py
+    attention_context_engine_tool.py
+    cleaner_sanitizer_tool.py
+    embedding_vectorizer_utility_tool.py
+    infrence_feed_forward_utility_tool.py
+    vocabulary_mapping_utility_tool.py
+engines/axis-llm/src/
+    __init__.py
+engines/axis-logic/
+    README.md
+    __init__.py
+    gaming_test.py
+    main.py
+engines/axis-logic/config/
+    _init_.py
+    env_vars.py
+    logging_config.py
+    settings.py
+    silo_params.py
+    system.py
+    tickers.py
+engines/axis-logic/ecom/
+    _init_.py
+    data_source.py
+    ecom.py
+    engine_base.py
+    entropy.py
+    feedback.py
+    risk.py
+    signal.py
+    stratagy.py
+    test_status.py
+    thershold.py
+engines/axis-logic/ecom/config/
+    __init__.py
+    silo_params.py
+    system.py
+    tickers.py
+engines/axis-logic/ecom/lib/
+    __init__.py
+    fetcher.py
+    forensic_ledger.py
+    math_utils.py
+    memory.py
+    watchdog.py
+engines/axis-logic/gaming_video/
+    __init__.py
+    angular_momentum_active_ragdoll_blending.py
+    ballistics_trajectory_fluid_interactions.py
+    computational_constraint_solving_load_balancing.py
+    deterministic_chaos_preditable_randomness.py
+    enviromental_dynamics.py
+    facial_muscle_tension_micro_simulation.py
+    fauna_quadruped_dynamics.py
+    human_character_physics.py
+    ik_procedural_foot_placement.py
+    legendary_micro_mechanics_realism.py
+    object_dynamics.py
+    spatial_persistence_object_memory.py
+    structural_integrity_destuctibility_physics.py
+    systemic_emergency_chainreaction.py
+    thermal_eviornmental_conductivity.py
+    universal_physics_foundation.py
+    vestibular_sensory_simulation.py
+engines/axis-logic/gaming_video/config/
+    __init__.py
+    angular_momentum_active_ragdoll_blending_config.py
+    ballistics_trajectory_fluid_interactions_config.py
+    computational_constraint_solving_load_balancing_config.py
+    deterministic_chaos_preditable_randomness_config.py
+    enviromental_dynamics_config.py
+    facial_muscle_tension_micro_simulation_config.py
+    fauna_quadruped_dynamics_config.py
+    human_character_physics_config.py
+    ik_procedural_foot_placement_config.py
+    legendary_micro_mechanics_realism_config.py
+    object_dynamics_config.py
+    spatial_persistence_object_memory_config.py
+    structural_integrity_destuctibility_physics_config.py
+    systemic_emergency_chainreaction_config.py
+    thermal_eviornmental_conductivity_config.py
+    universal_physics_foundation_config.py
+    vestibular_sensory_simulation_config.py
+engines/axis-logic/gaming_video/lib/
+    __init__.py
+    angular_momentum_active_ragdoll_blending_tool.py
+    ballistics_trajectory_fluid_interactions_tool.py
+    computational_constraint_solving_load_balancing_tool.py
+    deterministic_chaos_preditable_randomness_tool.py
+    enviromental_dynamics_tool.py
+    facial_muscle_tension_micro_simulation_tool.py
+    fauna_quadruped_dynamics_tool.py
+    human_character_physics_tool.py
+    ik_procedural_foot_placement_tool.py
+    legendary_micro_mechanics_realism_tool.py
+    object_dynamics_tool.py
+    spatial_persistence_object_memory_tool.py
+    structural_integrity_destuctibility_physics_tool.py
+    systemic_emergency_chainreaction_tool.py
+    thermal_eviornmental_conductivity_tool.py
+    universal_physics_foundation_tool.py
+    vestibular_sensory_simulation_tool.py
+engines/axis-logic/interface/
+    __init__.py
+    controller.py
+    voice_engine.py
+engines/axis-logic/lib/
+    _init_.py
+    fetcher.py
+    forensic_ledger.py
+    math_utils.py
+    memory.py
+    port.py
+    watchdog.py
+engines/axis-logic/operations/
+    __init__.py
+    dispatcher.py
+    emergency_halt.py
+    feedback_loop.py
+    integrity_checker.py
+    session_manager.py
+    status_reporter.py
+    stream_processor.py
+    task_scheduler.py
+engines/axis-logic/operations/config/
+    __init__.py
+    dispatcher_config.py
+    emergency_halt_config.py
+    feedback_loop_config.py
+    integrity_checker_config.py
+    session_manager_config.py
+    status_reporter_config.py
+    stream_processor_config.py
+    task_scheduler_config.py
+engines/axis-logic/operations/lib/
+    __init__.py
+    dispatcher_tool.py
+    emergency_halt_tool.py
+    feedback_loop_tool.py
+    integrity_checker_tool.py
+    session_manager_tool.py
+    status_reporter_tool.py
+    stream_processor_tool.py
+    task_scheduler_tool.py
+engines/axis-logic/sports/
+    _init_.py
+    data_source.py
+    engine_base.py
+    entropy.py
+    feedback.py
+    risk.py
+    signal.py
+    sports.py
+    stratagy.py
+    test_status.py
+    thershold.py
+engines/axis-logic/sports/config/
+    __init__.py
+    silo_params.py
+    system.py
+    tickers.py
+engines/axis-logic/sports/lib/
+    __init__.py
+    fetcher.py
+    forensic_ledger.py
+    math_utils.py
+    memory.py
+    watchdog.py
+engines/axis-logic/src/
+    _init_.py
+engines/axis-logic/src/silo_manager/
+    _init_.py
+    data_sorce.py
+    engine_base.py
+    entropy.py
+    feedback.py
+    risk.py
+    signal.py
+    strategy.py
+    threshold.py
+engines/axis-logic/stocks/
+    _init_.py
+    data_source.py
+    engine_base.py
+    entropy.py
+    feedback.py
+    risk.py
+    signal.py
+    stocks.py
+    stratagy.py
+    test_status.py
+    thershold.py
+engines/axis-logic/stocks/config/
+    __init__.py
+    silo_params.py
+    system.py
+    tickers.py
+engines/axis-logic/stocks/lib/
+    __init__.py
+    fetcher.py
+    forensic_ledger.py
+    math_utils.py
+    memory.py
+    watchdog.py
+engines/axis-omni/
+    README.md
+    __init__.py
+    test_master.c
+engines/axis-omni/bank/
+    __init__.py
+engines/axis-omni/bank/performance_modes/
+    __init__.py
+    american_english.json
+    british.json
+    british.txt
+    celebrate.json
+    corporate.json
+    country.json
+    narrative_warm.json
+    poetry.json
+    rap.json
+    spanish.json
+    spoken_word.json
+    standard_neutral.json
+    theatrical.json
+engines/axis-omni/bank/templates/
+    __init__.py
+    commercial.txt
+    conversation.txt
+    psa.txt
+    quotes.txt
+    surprises.txt
+engines/axis-omni/lib/
+    __init__.py
+    aggregator.c
+    aggregator.h
+    common_utils.c
+    common_utils.h
+    fetcher.c
+    fetcher.h
+    genorator.c
+    genorator.h
+    logger.c
+    logger.h
+    metronome.c
+    metronome.h
+    omni_protocol.c
+    omni_protocol.h
+    pace-contrller.h
+    pace_controller.c
+    pipe.c
+    pipe.h
+    post.c
+    post.h
+    shunt.c
+    shunt.h
+    speach_engine.c
+    speach_engine.h
+    synthesizer.c
+    synthesizer.h
+    vibe_profiles.h
+engines/axis-omni/src/
+    __init__.py
+    input_handeler.c
+    input_handler.h
+    main.c
+engines/axis-phonetic/
+    README.md
+    __init__.py
+engines/axis-phonetic/axis-phonetic/
+    __init__.py
+engines/axis-phonetic/bank/
+    __init__.py
+    bank.c
+    bank.h
+    fetcher.c
+    fetcher.h
+    shunt.c
+    shunt.h
+    vibe_profiles.h
+    voice_module.c
+    voice_module.h
+engines/axis-phonetic/configs/
+    Engine_config.h
+    __init__.py
+engines/axis-phonetic/lib/
+    __init__.py
+    logger.c
+    logger.h
+engines/axis-phonetic/processor/
+    __init__.py
+    processor.c
+    processor.h
+engines/axis-phonetic/src/
+    __init__.py
+    main.c
+    phonetic_data.h
+engines/axis-port/
+    README.md
+    __init__.py
+    pipeline_pulse.json
+engines/axis-port/build/
+    __init__.py
+engines/axis-port/config/
+    __init__.py
+engines/axis-port/lib/
+    __init__.py
+    actuator.c
+    actuator.h
+    memory_purger.c
+    memory_purger.h
+    stability_watchdog.c
+    stability_watchdog.h
+engines/axis-port/src/
+    __init__.py
+    acuator_interface.c
+    acuator_interface.h
+    main.c
+    main.h
+    workflow_manager.c
+    workflow_manager.h
+engines/axis-search_engine/
+    README.md
+    __init__.py
+    archival_access.py
+    knowledge_graph.py
+    main.py
+    memory_store.py
+    search_engine.py
+    search_routing.py
+    ui_dashboard.py
+    web_crawling.py
+engines/axis-search_engine/config/
+    __init__.py
+    archival_access_config.py
+    knowledge_graph_config.py
+    memory_store_config.py
+    search_routing_config.py
+    ui_dashboard_config.py
+    web_crawling_config.py
+engines/axis-search_engine/lib/
+    __init__.py
+    archival_access_tool.py
+    knowledge_graph_tool.py
+    memory_store_tool.py
+    search_routing_tool.py
+    ui_dashboard_tool.py
+    web_crawling_tool.py
+engines/axis-search_engine/src/
+    __init__.py
+engines/axis-sweep/
+    README.md
+    __init__.py
+    package.json
+engines/axis-sweep/config/
+    __init__.py
+    config_settings.js
+engines/axis-sweep/lib/
+    __init__.py
+    crypto_vault.js
+    port_manager.js
+engines/axis-sweep/src/
+    __init__.py
+    axis-manager.js
+    dashbord.js
+    event_dispatcher.js
+    feedback_manager.js
+    lineage.js
+    main.js
+    purge.js
+    scheduler.js
+    throttler.js
+engines/axis-triage/
+    README.md
+    __init__.py
+    axis_audit_log.txt
+    config_map.json
+    grid_controller.py
+    main.py
+    sanatizer.py
+    sync_manager.py
+    task_runner.py
+    triage_gate.py
+engines/axis-triage/config/
+    __init__.py
+    grid_controller_config.py
+    sanatizer_config.py
+    sync_manager_config.py
+    task_runner_config.py
+    triage_gate_config.py
+engines/axis-triage/lib/
+    __init__.py
+    grid_controller_tool.py
+    sanatizer_tool.py
+    sync_manager_tool.py
+    task_runner_tool.py
+    triage_gate_tool.py
+engines/axis-validator/
+    README.md
+    __init__.py
+    main.py
+engines/axis-validator/orchestrator/
+    __init__.py
+    orchestrator.py
+engines/axis-validator/src/
+    __init__.py
+    automated_compliance_license_sandbox.py
+    autonomous_ingestion_daemon.py
+    code_refactoring_sanitization.py
+    compliance_spec_auditor.py
+    direct_api_router.py
+    drift_anomaly_detector.py
+    drift_auditor.py
+    extraction_parsing_pipeline.py
+    human_in_the_loop_audit.py
+    local_namespace_rewritting.py
+    repository_miner.py
+    schema_template_stubs.py
+    scope_based_privilege_enforcers.py
+    surgical_diff_verifier.py
+    upstream_infiltration_script.py
+    upstream_sync_diff_monitor.py
+    validation_diff_gatekeeper.py
+engines/axis-validator/src/config/
+    __init__.py
+    automated_compliance_license_sandbox_config.py
+    autonomous_ingestion_daemon_config.py
+    code_refactoring_sanitization_config.py
+    compliance_spec_auditor_config.py
+    direct_api_router_config.py
+    drift_anomaly_detector_config.py
+    drift_auditor_config.py
+    extraction_parsing_pipeline_config.py
+    human_in_the_loop_audit_config.py
+    local_namespace_rewritting_config.py
+    repository_miner_config.py
+    schema_template_stubs_config.py
+    scope_based_privilege_enforcers_config.py
+    surgical_diff_verifier_config.py
+    upstream_infiltration_script_config.py
+    upstream_sync_diff_monitor_config.py
+    validation_diff_gatekeeper_config.py
+engines/axis-validator/src/lib/
+    __init__.py
+    automated_compliance_license_sandbox_tool.py
+    autonomous_ingestion_daemon_tool.py
+    code_refactoring_sanitization_tool.py
+    compliance_spec_auditor_tool.py
+    direct_api_router_tool.py
+    drift_anomaly_detector_tool.py
+    drift_auditor_tool.py
+    extraction_parsing_pipeline_tool.py
+    human_in_the_loop_audit_tool.py
+    local_namespace_rewritting_tool.py
+    repository_miner_tool.py
+    schema_template_stubs_tool.py
+    scope_based_privilege_enforcers_tool.py
+    surgical_diff_verifier_tool.py
+    upstream_infiltration_script_tool.py
+    upstream_sync_diff_monitor_tool.py
+    validation_diff_gatekeeper_tool.py
+engines/axis-vantage_point/
+    README.md
+    README.txt
+    __init__.py
+engines/axis-vantage_point/build/
+    __init__.py
+engines/axis-vantage_point/config/
+    __init__.py
+    nod_config.json
+engines/axis-vantage_point/scripts/
+    __init__.py
+    compile.sh
+engines/axis-vantage_point/src/
+    __init__.py
+    axis_vantage.c
+    axis_vantage.h
+    crypto.c
+    crypto.h
+    group_hub.c
+    group_hub.h
+    identity.c
+    identity.h
+    main.c
+    messaging.c
+    messaging.h
+    network.c
+    network.h
+engines/axis-vantage_point/src/agent/
+    __init__.py
+    agent.c
+    agent.h
+engines/axis-video_creator/
+    README.md
+    __init__.py
+    init_system.py
+    main.py
+engines/axis-video_creator/config/
+    __init__.py
+engines/axis-video_creator/lib/
+    __init__.py
+    cryptography_engine.py
+    loader.py
+    logger.py
+    protocol_validator.py
+    request_tool.py
+engines/axis-video_creator/silos/
+    __init__.py
+engines/axis-video_creator/silos/active_interview/
+    __init__.py
+    context.py
+    input.py
+    request_tool.py
+    synthesizer.py
+engines/axis-video_creator/silos/active_interview/config/
+    __init__.py
+    context_config.py
+    input_config.py
+    synthesizer_config.py
+engines/axis-video_creator/silos/active_interview/lib/
+    __init__.py
+    context_tool.py
+    input_tool.py
+    synthesizer_tool.py
+engines/axis-video_creator/silos/active_interview/utility/
+    __init__.py
+engines/axis-video_creator/silos/asset_generation_library/
+    __init__.py
+    generator.py
+    request_tool.py
+engines/axis-video_creator/silos/asset_generation_library/config/
+    __init__.py
+    generator_config.py
+engines/axis-video_creator/silos/asset_generation_library/lib/
+    __init__.py
+    generator_tool.py
+engines/axis-video_creator/silos/asset_generation_library/utility/
+    __init__.py
+engines/axis-video_creator/silos/blueprint_compiler/
+    __init__.py
+    assembler.py
+    parser.py
+    request_tool.py
+engines/axis-video_creator/silos/blueprint_compiler/config/
+    __init_-.py
+    assembler_config.py
+    parser_config.py
+engines/axis-video_creator/silos/blueprint_compiler/lib/
+    __init__.py
+    assembler_tool.py
+    parser_tool.py
+engines/axis-video_creator/silos/blueprint_compiler/utility/
+    __init__.py
+engines/axis-video_creator/silos/caracter_style_forge/
+    __init__.py
+    attribute.py
+    request_tool.py
+    style.py
+engines/axis-video_creator/silos/caracter_style_forge/config/
+    __init__.py
+    attribute_tool.py
+    style_config.py
+engines/axis-video_creator/silos/caracter_style_forge/lib/
+    __init__.py
+    attribute_tool.py
+    style_tool.py
+engines/axis-video_creator/silos/cgi/
+    blueprint_compiler_hook.py
+    camera_logic_utility.py
+    frame_sequence_recorder.py
+    lighting_present_utility.py
+    render_pipeline_utility.py
+    request_tool.py
+    rigging_automator.py
+    scene_orchestrator.py
+    test_cgi_silo.py
+engines/axis-video_creator/silos/cgi/config/
+    __init__.py
+    blueprint_compiler_hook_config.py
+    camera_logic_utility_config.py
+    frame_sequence_recorder_config.py
+    lighting_present_utility_config.py
+    render_pipeline_utility_config.py
+    rigging_automator_config.py
+    scene_orchestrator_config.py
+engines/axis-video_creator/silos/cgi/lib/
+    __init__.py
+    blueprint_compiler_hook_tool.py
+    camera_logic_utility_tool.py
+    frame_sequence_recorder_tool.py
+    lighting_present_utility_tool.py
+    render_pipeline_utility_tool.py
+    rigging_automator_tool.py
+    scene_orchestrator_tool.py
+engines/axis-video_creator/silos/character_style_forge/
+    __init__.py
+engines/axis-video_creator/silos/character_style_forge/config/
+    __init__.py
+engines/axis-video_creator/silos/character_style_forge/utility/
+    __init__.py
+engines/axis-video_creator/silos/composition_final_render/
+    __init__.py
+    encoder.py
+    exporter.py
+    request_tool.py
+engines/axis-video_creator/silos/composition_final_render/config/
+    __init__.py
+    encoder_config.py
+    exporter_config.py
+engines/axis-video_creator/silos/composition_final_render/lib/
+    __init__.py
+    encoder_tool.py
+    exporter_tool.py
+engines/axis-video_creator/silos/composition_final_render/utility/
+    __init__.py
+engines/axis-video_creator/silos/composition_sync_engine/
+    __init__.py
+    layer.py
+    request_tool.py
+    temporal.py
+engines/axis-video_creator/silos/composition_sync_engine/config/
+    __init__.py
+    layer_config.py
+    temporal_config.py
+engines/axis-video_creator/silos/composition_sync_engine/lib/
+    __init__.py
+    layer_tool.py
+    temporal_tool.py
+engines/axis-video_creator/silos/composition_sync_engine/utility/
+    __init__.py
+engines/axis-video_creator/silos/concept_vault/
+    __init__.py
+    request_tool.py
+    vault.py
+engines/axis-video_creator/silos/concept_vault/config/
+    __init__.py
+    vault_config.py
+engines/axis-video_creator/silos/concept_vault/lib/
+    __init__.py
+    vault_tool.py
+engines/axis-video_creator/silos/concept_vault/utility/
+    __init__.py
+engines/axis-video_creator/silos/inspector/
+    __init__.py
+engines/axis-video_creator/silos/inspector/config/
+    __init__.py
+engines/axis-video_creator/silos/inspector/utility/
+    __init__.py
+engines/axis-video_creator/silos/storyboard_timing_precision_engine/
+    __init__.py
+    request_tool.py
+    timing_engine.py
+engines/axis-video_creator/silos/storyboard_timing_precision_engine/config/
+    __init__.py
+    timing_config.py
+engines/axis-video_creator/silos/storyboard_timing_precision_engine/lib/
+    __init__.py
+    rythm_calc.py
+engines/axis-video_creator/silos/storyboard_timing_precision_engine/utility/
+    __init__.py
+engines/axis-video_creator/silos/vision_narrative_architect/
+    __init__.py
+    bus_connector.py
+    integrity_check.py
+    narrative_parser.py
+    request_tool.py
+engines/axis-video_creator/silos/vision_narrative_architect/config/
+    __init__.py
+    bus_connector_config.py
+    integrity_check_config.py
+    narrative_parser_config.py
+engines/axis-video_creator/silos/vision_narrative_architect/lib/
+    __init__.py
+    bus_connector_tool.py
+    integrity_check_tool.py
+    narrative_parser_tool.py
+engines/axis-video_creator/silos/vision_narrative_architect/utility/
+    __init__.py
+engines/axis-video_creator/src/
+    __init__.py
+engines/axis-video_creator/src/intergration_office/
+    __init__.py
+engines/axis-video_creator/src/quality_control/
+    __init__.py
+engines/axis-video_creator/src/quality_control/inspector/
+    __init__.py
+    inspector.py
+    request_tool.py
+    the reporter.py
+    validator.py
+engines/axis-video_creator/src/quality_control/inspector/config/
+    __init__.py
+    inspector_config.py
+    the reporter_config.py
+    validator_config.py
+engines/axis-video_creator/src/quality_control/inspector/lib/
+    __init__.py
+    inspector_tool.py
+    the reporter_tool.py
+    validator_tool.py
+engines/axis-vision/
+    README.md
+    __init__.py
+engines/axis-vision/assets/
+    __init__.py
+engines/axis-vision/config/
+    __init__.py
+engines/axis-vision/src/
+    __init__.py
+    engine_core.c
+    engine_core.h
+    main.c
+    purge_protocol.c
+    purge_protocol.h
+    research_engine.c
+    research_engine.h
+    universal_port.c
+    universal_port.h
+    vision_logic.c
+    vision_logic.h
+    voice_engine.c
+    voice_engine.h
+engines/triad-protocol-module-/
+    PROTOCOL.md
+    README.md
+    _init_.py
+    config.json
+    config.py
+    controller.py
+    dashboard.py
+    engine.py
+    forest.py
+    gatekeeper.py
+    ledger.py
+    manager.py
+    rules.py
+    sandbox.py
+    shield.py
+    system_check.py
+    test_protocol.py
+engines/triad-protocol-module-/docs/
+    Principles_and_Protocols.md
+```

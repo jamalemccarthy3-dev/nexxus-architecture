@@ -1,6 +1,10 @@
+![NEXXUS.ai](assets/banner.png)
+
 # Autonomous Automation AI Infrastructure and Orchestrator
 
 **NEXXUS: architecture playbook**
+
+> **Coming soon: a free starter kit (about 2 to 3 weeks, maybe sooner).** A small, runnable core (the bridge port, its bridges, a local LLM and a search engine) for you to build on. Until then the **blueprint skeleton** in this repository is open to everyone: study it, copy it, build on it (see the Licence section).
 
 > ### "My time is money. My product is free."
 >
